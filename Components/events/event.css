@@ -364,32 +364,32 @@ input[type="checkbox"]{
     box-shadow: 10px 10px 5px rgba(0,0,0,0.15);
    }
    .second .container .card .card-inner #first{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Poster\ Presentation.jpg);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Poster\ Presentation.jpg);
     background-size: cover;
     background-position: center center;
    }
    .second .container .card .card-inner #second{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Webinar.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Webinar.jpeg);
     background-size: cover;
     background-position: center center;
    }
    .second .container .card .card-inner #third{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Quiz\ Competition.jpg);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Quiz\ Competition.jpg);
     background-size: cover;
     background-position: center center;
    }
    .second .container .card .card-inner #fourth{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Seminar\ Ravi.jpg);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Seminar\ Ravi.jpg);
     background-size: cover;
     background-position: center center;
    }
    .second .container .card .card-inner #fifth{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Conference.jpg);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Conference.jpg);
     background-size: cover;
     background-position: center center;
    }
    .second .container .card .card-inner #sixth{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Final\ Round.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Final\ Round.jpeg);
     background-size: cover;
     background-position: center center;
    }
@@ -479,47 +479,47 @@ input[type="checkbox"]{
     box-shadow: 10px 10px 5px rgba(0,0,0,0.15);
 }
 .eventsecond .event_container .event_card .event_card-inner #first{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/tech\ kriti\ cover\ page.jpeg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/tech\ kriti\ cover\ page.jpeg);
     background-size: cover;
     background-position: center center;
 }
 .eventsecond .event_container .event_card .event_card-inner #second{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Shaastra.jpg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Shaastra.jpg);
     background-size: cover;
     background-position: center center;
 }
 .eventsecond .event_container .event_card .event_card-inner #third{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Advaita.jpg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Advaita.jpg);
     background-size: cover;
     background-position: center center;
 }
 .eventsecond .event_container .event_card .event_card-inner #fourth{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Scintilla\ cover\ page.jpeg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Scintilla\ cover\ page.jpeg);
     background-size: cover;
     background-position: center center;
 }
 .eventsecond .event_container .event_card .event_card-inner #fifth{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Mesaventures.jpg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Mesaventures.jpg);
     background-size: cover;
     background-position: center center;
 }
 .eventsecond .event_container .event_card .event_card-inner #sixth{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Interaction\ Session.jpg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Interaction\ Session.jpg);
     background-size: cover;
     background-position: center center;
 }
 .eventsecond .event_container .event_card .event_card-inner #seventh{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Seminar\ Mitacs.jpg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Seminar\ Mitacs.jpg);
     background-size: cover;
     background-position: center center;
 }
 .eventsecond .event_container .event_card .event_card-inner #eighth{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Webinar\ Gate.jpg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Webinar\ Gate.jpg);
     background-size: cover;
     background-position: center center;
 }
 .eventsecond .event_container .event_card .event_card-inner #nineth{
-  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Placement\ Workshop.jpg);
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.15)) , url(../../images/Events\ pic/Placement\ Workshop.jpg);
     background-size: cover;
     background-position: center center;
 }
