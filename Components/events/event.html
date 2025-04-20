@@ -35,7 +35,11 @@
           <li><a href="../contact/contact.html">Contact</a></li>
         </ul>
       </nav>
-    </div></header>
+    </div>
+  </header>
+
+
+  
 
   <main class="l-main">
 
@@ -58,16 +62,16 @@
       <div class="content">
         <img src="../../images/chemitout poster.jpg" alt="chem-it-out" data-aos="fade-left" data-aos-duration="1100">
         <div class="event-text" data-aos="fade-right" data-aos-duration="1100">
-          <p>The Quimica society came up with its technical carnival, CHEM-IT-OUT at this year's TechMahotsav'23. We planned some exciting and nerve-wracking events for this tech-fest season under our department's banner. 
-            This TechMahotsav took the students on a voyage of zenith and served as a perfect launch pad for technology enthusiasts for showcasing their intelligence and inventiveness. It was, for sure, a massive platform
-             for various activities, organized in the form of competitive events, guest lectures,seminars by notable personalities, technical workshops, and exhibitions.
-            Quimica gave them the chance to pause, get fresh thoughts, and demonstrate their technical powers.
+          <p>The Quimica Society hosted its technical carnival, CHEM-IT-OUT, at TechMahotsav’23, offering a thrilling lineup of events under the department’s banner. This tech fest served as a launch pad for technology enthusiasts to showcase their creativity and intellect through competitive events, guest lectures, seminars, workshops, and exhibitions. Quimica provided a refreshing space for students to pause, gain new insights, and demonstrate their technical prowess.
             </p>
           <a href="../../index.html"><button type="button">See Glimpses</button></a>     
         </div>
       </div>
 
     </section>
+
+
+
 
     <section class="second">
 
@@ -76,84 +80,66 @@
         <div class="line" data-aos="fade-right" data-aos-duration="1100"></div>
       </div>
       
-     <div class="container">
+     <div class="container" id="card-container">
+      <script>
+        const cardData = [
+        {
+          frontId: "first",
+          title: "Poster <span>Presentation</span>",
+          description: "Participants showcased models and posters, judged by experts from the Chemical Department.",
+        },
+        {
+          frontId: "second",
+          title: "Web<span>inar</span>",
+          description: "Mr. Vinay Kariwala shared business growth insights in a Day 1 webinar.",
+        },
+        {
+          frontId: "third",
+          title: "Quiz <span>Competition</span>",
+          description: "A thrilling four-round quiz where Team Debuggers claimed the top spot.",
+        },
+        {
+          frontId: "fourth",
+          title: "Sem<span>inar</span>",
+          description: "Mr. Rama Shankar discussed nuclear power's safety, benefits, and future potential.",
+        },
+        {
+          frontId: "fifth",
+          title: "Conf<span>erence</span>",
+          description: "CSIR's Mr. Jaywardhan Kumar discussed carbon capture and its environmental importance.",
+        },
+        {
+          frontId: "sixth",
+          title: "Mesa<span>venture's</span>",
+          description: "Top 10 teams presented incidents, followed by intense cross-questioning sessions.",
+        },
+      ];
 
-      <div class="card" data-aos="fade-up" data-aos-duration="1100">
-        <div class="card-inner">
-          <div class="front" id="first">
-          </div>
-          <div class="back">
-            <img src="../../images/waving-hand.png">
-            <h1>Poster <span>Presentation</span></h1>
-            <p>The participants displayed their artistic talents in a fun event that included a model exhibition and poster presentation which was assessed by Dr. Amit Kumar Gupta (HOD of the Chemical department), Mr. Sunil Kumar Singh (professor in-charge of Quimica) Dr. Ashok Kumar Barnwal, and Dr. Ajay Oraon sir respectively.</p>
+    const container = document.getElementById("card-container");
+
+    cardData.forEach((card) => {
+      const cardHTML = `
+        <div class="card" data-aos="fade-up" data-aos-duration="1100">
+          <div class="card-inner">
+            <div class="front" id="${card.frontId}"></div>
+            <div class="back">
+              <img src="../../images/waving-hand.png" alt="icon" />
+              <h1>${card.title}</h1>
+              <p>${card.description}</p>
+            </div>
           </div>
         </div>
-      </div>
+      `;
+      container.insertAdjacentHTML("beforeend", cardHTML);
+    });
 
-      <div class="card" data-aos="fade-up" data-aos-duration="1100">
-        <div class="card-inner">
-          <div class="front" id="second">
-          </div>
-          <div class="back">
-            <img src="../../images/waving-hand.png">
-            <h1>Web<span>inar</span></h1>
-            <p>On the first day of the tech-mahostav'23, we hosted a thought-provoking webinar. It was an honor for us to take in sales wizard, Mr. Vinay Kariwala as he summarised business development on starting, growing, and scaling a successful company in these dynamic and quickly evolving industries.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-aos="fade-up" data-aos-duration="1100">
-        <div class="card-inner">
-          <div class="front" id="third">
-          </div>
-          <div class="back">
-            <img src="../../images/waving-hand.png">
-            <h1>Quiz <span>Competition</span></h1>
-            <p>An exciting and interesting quiz round was organized, including four rounds the rapid-fire round, the buzzer round, the individual Q&A, and the elimination. The rivalry was intense, and it came to a close when the Team Debuggers were declared the winner.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-aos="fade-up" data-aos-duration="1100">
-        <div class="card-inner">
-          <div class="front" id="fourth">
-          </div>
-          <div class="back">
-            <img src="../../images/waving-hand.png">
-            <h1>Sem<span>inar</span></h1>
-            <p>An insightful seminar was organized in which, Mr. Rama Shankar, a distinguished reactor officer at the Nuclear Power Corporation of India Limited (NPCIL), BARC, Department of Atomic Energy, provided us with a thorough overview of the field of nuclear power, outlining its benefits, history, safety concerns, and potential in the future.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-aos="fade-up" data-aos-duration="1100">
-        <div class="card-inner">
-          <div class="front" id="fifth">
-          </div>
-          <div class="back">
-            <img src="../../images/waving-hand.png">
-            <h1>Conf<span>erence</span></h1>
-            <p>The seminar on carbon capture was delivered by Mr. Jaywardhan Kumar, a senior scientist at the CSIR (Council of Scientific & Industrial Research), in which he emphasized the technology's potential to lower greenhouse gas emissions, foster economic growth, and spur innovation in the energy industry.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card" data-aos="fade-up" data-aos-duration="1100">
-        <div class="card-inner">
-          <div class="front" id="sixth">
-          </div>
-          <div class="back">
-            <img src="../../images/waving-hand.png">
-            <h1>Mesaventure's <span>Round</span></h1>
-            <p>The Mesadventure was an energizing event. Two distinct parts make up the event. The top 10 teams were chosen from an abstract submission round concerning an incident that occurred in online form during the first phase. The second round consists of a presentation of the incident and cross-questioning about a subject that has been discussed by the participants.</p>
-          </div>
-        </div>
-      </div>
-
+      </script>
      </div>
 
     </section>
+
+
+
 
     <section class="eventsecond">
 
@@ -162,144 +148,85 @@
         <div class="line" data-aos="fade-right" data-aos-duration="1100"></div>
       </div>
 
-      <div class="event_container">
+      <div class="event_container" id="event-container">
         
-        <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
-          <div class="event_card-inner">
-            <div class="event_front" id="first">
-            </div>
-            <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Tech <span>Kriti</span></h1>
-              <p>A technical event with a two-tier brainstorming
-                competition and exciting adventures.
-                It's an event where participants are provided with an
-                opportunity to show their creativity. It gave the
-                students a chance to explore themselves and showcase
-                their aptitude.
-                </p>
-            </div>
-          </div>
-        </div>
+        <script>
+          const events = [
+            {
+              id: "first",
+              title: "Tech <span>Kriti</span>",
+              description: "A two-tier tech competition encouraging creativity, problem-solving, and adventure.",
+            },
+            {
+              id: "second",
+              title: "Shaa<span>stra</span>",
+              description: "A multi-round event on quizzes and industry topics like AI, Oil, and Telecom.",
+            },
+            {
+              id: "third",
+              title: "Adv<span>aita</span>",
+              description: "Held on Independence Day, it included science-based quizzes and a warm celebration.",
+            },
+            {
+              id: "fourth",
+              title: "Scin<span>tilla</span>",
+              description: "Focused on chemical debates, boosting participant's analytical and group discussion skills.",
+            },
+            {
+              id: "fifth",
+              title: "Mesa<span>venture</span>",
+              description: "Addressed industrial mishaps via abstract submissions and critical presentation rounds.",
+            },
+            {
+              id: "sixth",
+              title: "Alumni<span> Session</span>",
+              description: "Alumni shared success stories, strategies, and guidance for academic and career growth.",
+            },
+            {
+              id: "seventh",
+              title: "Sem<span>inar</span>",
+              description: "MITACS-qualified seniors discussed Globalink internship application tips and experiences.",
+            },
+            {
+              id: "eighth",
+              title: "Web<span>inar</span>",
+              description: "IIT alumnus guided students on GATE, UPSC, CAT, and career strategies.",
+            },
+            {
+              id: "nineth",
+              title: "Work<span>shop</span>",
+              description: "Focused on profile building, placements, and communication for professional development.",
+            },
+          ];
 
-        <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
-          <div class="event_card-inner">
-            <div class="event_front" id="second">
-            </div>
-            <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Shaa<span>stra</span></h1>
-              <p>It was a three-tier event. An enthralling quiz followed by
-                problem-solving rounds ended up with a mind-blowing
-                competition among entrants. Industrial knowledge and
-                interest of the participants were tested through this
-                event among the four domains: Oil and Petroleum,
-                Automobile, telecommunication, and Artificial
-                intelligence.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
-          <div class="event_card-inner">
-            <div class="event_front" id="third">
-            </div>
-            <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Adv<span>aita</span></h1>
-              <p>The captivating "ADVAITA- In search of wisdom" was an
-                event organized on the eve of Independence Day which
-                comprised of a welcome celebration for our guests and
-                a three-tiered quiz competition with a strong emphasis
-                on the application of science and technology which
-                was an incredible and exciting experience for the
-                students.</p>
-            </div>
-          </div>
-        </div>
+    const eventcontainer = document.getElementById("event-container");
 
+    events.forEach((event) => {
+      const card = `
         <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
           <div class="event_card-inner">
-            <div class="event_front" id="fourth">
-            </div>
+            <div class="event_front" id="${event.id}"></div>
             <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Scin<span>tilla</span></h1>
-              <p>It was based on the idea of balancing the pros and cons
-                of different products related to the chemical industry.
-                The event was useful in developing the debating sense
-                which is a key in many GD sessions.</p>
+              <img src="../../images/waving-hand.png" alt="icon">
+              <h1>${event.title}</h1>
+              <p>${event.description}</p>
             </div>
           </div>
         </div>
+      `;
+      eventcontainer.insertAdjacentHTML("beforeend", card);
+    });
 
-        <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
-          <div class="event_card-inner">
-            <div class="event_front" id="fifth">
-            </div>
-            <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Mesa<span>venture</span></h1>
-              <p>The two-rounds event, named MESAVENTURE's goal was to raise awareness about mishaps in various industries, i.e reducing the likelihood of mishaps in industries.The first round was of abstract presentation. In the second round i.e. presentation round, participants used PowerPoint to showcase their various models on the mishaps with critical analysis and comprehension.</p>
-            </div>
-          </div>
-        </div>
+        </script>
 
-        <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
-          <div class="event_card-inner">
-            <div class="event_front" id="sixth">
-            </div>
-            <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Alumni<span> Session</span></h1>
-              <p>Dr. Santosh Kumar and Dr. Rajesh Ranjan, two of our most seasoned alumni, were a part of Quimica's most recent Alumni Interaction Session. They have discussed their personal experiences, their views on the need for further education, and some strategies for their success.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
-          <div class="event_card-inner">
-            <div class="event_front" id="seventh">
-            </div>
-            <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Sem<span>inar</span></h1>
-              <p>MITACS-qualified seniors namely Miss Sakshi Gupta, Mr. Harsha Sinha, Miss Laxmi Sharma, Miss Mugdha Singh, and Miss Iysha Kumari answered queries regarding this Research Internship through the seminar. They answered all the questions about the Mitacs Globalink Research Internship.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
-          <div class="event_card-inner">
-            <div class="event_front" id="eighth">
-            </div>
-            <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Web<span>inar</span></h1>
-              <p>Quimica provided counseling for a multitude of competitive tests,
-                 including GATE, CAT, UPSC, etc. by bringing Mr. Ankur Bansal,
-                  the head of chemical engineering faculties at Unacademy Plus,
-                   and an IIT DELHI ALUMNI. He enlightened the students about
-                    various carrier options after attaining their bachelor's degree.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="event_card" data-aos="fade-up" data-aos-duration="1100">
-          <div class="event_card-inner">
-            <div class="event_front" id="nineth">
-            </div>
-            <div class="event_back">
-              <img src="../../images/waving-hand.png">
-              <h1>Work<span>shop</span></h1>
-              <p>A webinar with Miss. Riya Singh and Mr. Birendra Kumar, 2016 grads, on profile building and a plan for placements and internships were also organized. The webinar was helpful for the students and was designed to help them grow their profile and communication skillset and to expand their career skills.</p>
-            </div>
-          </div>
-        </div>
 
       </div>
 
     </section>
+
+
+
 
     <footer>
       <div class="footer-container">

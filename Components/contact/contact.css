@@ -176,6 +176,34 @@ input[type="checkbox"]{
     font-size: 5rem;
 }
 
+@media (max-width: 960px){
+  .context h1{
+    font-size: 4.5rem;
+}
+}
+@media (max-width: 850px){
+  .context h1{
+    font-size: 3.5rem;
+}
+}
+@media (max-width: 660px){
+  .context h1{
+    font-size: 2.6rem;
+}
+.firstpart{
+  height: 80vh;
+}
+.context {
+  top:40vh;
+  
+}
+}
+@media (max-width: 500px){
+  .context h1{
+    font-size: 2rem;
+}
+}
+
 .cursor{
     position: fixed;
     z-index: 10;
