@@ -259,7 +259,7 @@ input[type="checkbox"]{
   height: auto;
   overflow: hidden;
   display: none;
-  padding: 3rem 5rem;
+  padding: 3rem 4rem;
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(250,231,210,1) 35%, rgba(247,209,174,1) 100%);
   justify-content: center;
   align-items: center;
@@ -284,7 +284,7 @@ input[type="checkbox"]{
   border-bottom: 3px solid #FF5C00;
 }
 .secondpart .container-one{
-  margin-inline: 1.5rem;
+  margin-inline: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -433,6 +433,9 @@ input[type="checkbox"]{
   .secondpart .head-one .line-one{
     width: 150px;
   }
+  .secondpart{
+    padding: 3rem 2rem;
+  }
 }
 @media (max-width: 460px) {
   .secondpart .head-one{
@@ -457,7 +460,7 @@ input[type="checkbox"]{
 .thirdpart{
   width: 100%;
   height: auto;
-  padding: 3rem 5rem;
+  padding: 3rem 4rem;
   background: linear-gradient(115deg, #ffffff, #d4dfed);
   display: flex;
   flex-direction: column;
@@ -480,7 +483,7 @@ input[type="checkbox"]{
 /*=============== CARD ===============*/
 .third-container {
   margin-top: 4rem;
-  margin-inline: 1.5rem;
+  margin-inline: 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -491,6 +494,7 @@ input[type="checkbox"]{
 .third-card {
   position: relative;
   width: 290px;
+  height: 290px;
   background: #444;
   border-radius: 1rem 1rem 11rem 11rem;
   padding: 2.5rem 1.5rem 3.5rem;
@@ -644,13 +648,39 @@ input[type="checkbox"]{
 .third-info:hover .third-info__border, .third-info:hover .third-info__data, .third-info:hover .third-info__social {
   transform: translateX(0);
 }
-
+@media (max-width: 560px) {
+  .thirdpart .head-two{
+    font-size: 2rem;
+  }
+  .thirdpart .head-two .line-two{
+    width: 150px;
+  }
+  .thirdpart{
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 460px) {
+  .thirdpart .head-two{
+    font-size: 1.5rem;
+  }
+  .thirdpart .head-two .line-two{
+    width: 120px;
+  }
+}
+@media (max-width: 390px) {
+  .thirdpart .head-two{
+    font-size: 1.25rem;
+  }
+  .thirdpart .head-two .line-two{
+    width: 100px;
+  }
+}
 /* ====================== THIRD CARD ======================== */
 
 .fourthpart{
   width: 100%;
   height: auto;
-  padding: 3rem 5rem;
+  padding: 3rem 4rem;
   padding-bottom: 6rem;
   background: linear-gradient(90deg, rgba(34,34,34,1) 25%, rgba(20,20,20,1) 100%);
   display: flex;
