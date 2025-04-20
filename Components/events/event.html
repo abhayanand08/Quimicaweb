@@ -10,9 +10,53 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="../../images/Quimica_icon (1) black.png">
 </head>
+
+<style>
+  #preloader {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease;
+}
+
+.preloader-logo {
+  width: 250px;
+  height: auto;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+</style>
+
 <body>
 
-  <div id="preloader"></div>
+  <div id="preloader">
+    <img src="../../images/output-onlinegiftools.gif" alt="...Loading" class="preloader-logo" />
+  </div>
+
+  <script>
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0";
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 500);
+    });
+  </script>
 
   <header><div class="main-nav-parent" id="header">
     <nav>
