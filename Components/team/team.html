@@ -457,11 +457,13 @@
 </section>
 
 
+<!-- This is our team section - 2K22 MEMBERS -->
+
 
 <section class="thirdpart">
 
   <div class="head-two" data-aos="fade-right" data-aos-duration="1100">
-    <h1>2022 Batch</h1>
+    <h1>2K22 Batch</h1>
     <div class="line-two"></div>
   </div>
 
@@ -693,6 +695,94 @@
 
 
 </section>
+
+
+
+  <section class="fifthpart">
+
+    <div class="head-four" data-aos="fade-right" data-aos-duration="1100">
+      <h1>2K23 Batch</h1>
+      <div class="line-four"></div>
+    </div>
+
+    <div class="member-container" id="member-container2023">
+
+      <script>
+        const teamMembers2k23 = [
+          {
+            name: "Gourav Kumar",
+            role: "Content Team",
+            img: "../../images/2023 Pics/6425b0f5d2adf_download (1) - Gourav Kumar.jpg",
+            socials: {
+              facebook: "https://www.facebook.com/share/1BrgXazHjs/",
+              instagram: "https://www.instagram.com/gouravkr_04?igsh=MWliMDU1Z3V4Y3dzeg==",
+              linkedin: "https://www.linkedin.com/in/gourav-kumar-11ab25290"
+            }
+          },
+          {
+            name: "Sanskar Raj Singh",
+            role: "Content Team",
+            img: "../../images/2023 Pics/IMG_7894 - Sanskar Raj Singh.jpeg",
+            socials: {
+              facebook: "https://www.facebook.com/badal.r.singh",
+              instagram: "https://www.instagram.com/singh_sanskar11?igsh=dHQ2ZXN2YmoxYWdp",
+              linkedin: "https://www.linkedin.com/in/sanskar-raj-singh-4577172a3"
+            }
+          },
+          {
+            name: "Sambhav Pratap Singh",
+            role: "Design Team",
+            img: "../../images/2023 Pics/profile - Sambhav pratap Singh.jpg",
+            socials: {
+              facebook: "#",
+              instagram: "https://www.instagram.com/ssambhavpratap7?igsh=MXh1dm15cnhkc2M1dg==",
+              linkedin: "https://www.linkedin.com/in/sambhav-pratap-singh-0b4b86290"
+            }
+          },
+          {
+            name: "Harshit Rai",
+            role: "Design Team",
+            img: "../../images/2023 Pics/IMG_20240106_135807~2 - Harshit Rai.jpg",
+            socials: {
+              facebook: "#",
+              instagram: "https://www.instagram.com/harshit_rai26?igsh=emY1NzFqNjY0dHdp",
+              linkedin: "https://www.linkedin.com/in/harshit-rai-26b7a7282"
+            }
+          }
+        ];
+      
+        const cardContainer2023 = document.getElementById("member-container2023");
+      
+        teamMembers2k23.forEach((member, index) => {
+          cardContainer2023.innerHTML += `
+            <div class="fifthcard">
+              <div class="fifthimbBx">
+                <img src="${member.img}" alt="${member.name}">
+              </div>
+              <div class="fifthcontent">
+                <div class="fifthcontentBx">
+                  <h3>${member.name} <br><span>${member.role}</span></h3>
+                </div>
+                <ul class="fifthsci">
+                  <li style="--i: 1">
+                    <a href="${member.socials.facebook}" target="_blank"><i class="ri-facebook-line"></i></a>
+                  </li>
+                  <li style="--i: 2">
+                    <a href="${member.socials.instagram}" target="_blank"><i class="ri-instagram-line"></i></a>
+                  </li>
+                  <li style="--i: 3">
+                    <a href="${member.socials.linkedin}" target="_blank"><i class="ri-linkedin-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          `;
+        });
+      </script>
+
+    </div>
+
+  </section>
 
 
 <!-- This is the footer section -->
