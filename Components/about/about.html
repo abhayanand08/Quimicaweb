@@ -116,10 +116,7 @@
       </div>
        <div class="rightpart" data-aos="fade-right" data-aos-duration="1100">
         <h1>Our Vision</h1>
-        <p>To create the environment in the department of
-            Chemical Engineering for all round development of
-            Chemical Engineering students so that they can
-            compete in the global market.</p>
+        <p>To create the environment in the department of Chemical Engineering for all round development of Chemical Engineering students so that they can compete in the global market.</p>
        </div>
        <div class="leftpart" data-aos="fade-right" data-aos-duration="1100">
         <h1>Our Mission</h1>
@@ -141,44 +138,54 @@
 
     <section class="thirdpart">
 
-      <div class="container">
+      <div class="container" id="faculty-cards-container">
 
-        <div class="card" data-aos="flip-up" data-aos-duration="1100">
-          <div class="content">
-            <div class="imgbx">
-              <img src="../../images/Professor Pics/Director.jpg" alt="patron">
-            </div>
-            <div class="contentBox">
-              <h3>Prof. D.K. Singh</h3>
-              <h4>Patron</h4> 
-            </div>
-          </div>
-        </div>
+        <script>
+          const facultyData = [
+            {
+              name: "Prof. Pankaj Rai",
+              role: "Patron",
+              image: "../../images/Professor Pics/bit-director.jpg",
+              alt: "patron"
+            },
+            {
+              name: "Dr. Ashok Kr. Baranwal",
+              role: "Professor In-charge",
+              image: "../../images/Professor Pics/Ashok Sir.jpg",
+              alt: "professor in-charge"
+            },
+            {
+              name: "Dr. Nirupama",
+              role: "Professor In-charge",
+              image: "../../images/Professor Pics/Nirupama ma'am (1).jpg",
+              alt: "professor in-charge"
+            }
+          ];
 
-        <div class="card" data-aos="flip-up" data-aos-duration="1100">
-          <div class="content">
-            <div class="imgbx">
-              <img src="../../images/Professor Pics/Ashok Sir.jpg" alt="professor in-charge">
-            </div>
-            <div class="contentBox">
-              <h3>Dr. Ashok Kr. Barnwal</h3> 
-              <h4>Professor In-charge</h4>
-            </div>
-          </div>
-        </div>
+          const container = document.getElementById("faculty-cards-container");
 
-        <div class="card" data-aos="flip-up" data-aos-duration="1100">
-          <div class="content">
-            <div class="imgbx">
-              <img src="../../images/Professor Pics/Nirupama ma'am (1).jpg" alt="professor in-charge">
-            </div>
-            <div class="contentBox">
-              <h3>Dr. Nirupama</h3>
-              <h4>Professor In-charge</h4> 
-            </div>
-          </div>
-        </div>
+          facultyData.forEach((faculty) => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.setAttribute("data-aos", "flip-up");
+            card.setAttribute("data-aos-duration", "1100");
 
+            card.innerHTML = `
+              <div class="content">
+                <div class="imgbx">
+                  <img src="${faculty.image}" alt="${faculty.alt}">
+                </div>
+                <div class="contentBox">
+                  <h3>${faculty.name}</h3>
+                  <h4>${faculty.role}</h4>
+                </div>
+              </div>
+            `;
+
+            container.appendChild(card);
+          });
+
+        </script>
       </div>
 
     </section>
