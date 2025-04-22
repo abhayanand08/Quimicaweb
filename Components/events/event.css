@@ -248,28 +248,29 @@ input[type="checkbox"]{
   }
   .second-part .content{
     width: 1280px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 60px auto 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 2.5rem;
     flex-direction: row-reverse;
     justify-content: space-around;
   }
   .second-part .content img{
     height: auto;
-    width: 500px;
+    width: 380px;
     max-width: 100%;
     border-radius: 10px;
   }
   .event-text{
     width: 550px;
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0;
   }
   .event-text p{
     color: #000;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 28px;
     letter-spacing: 1px;
     margin-bottom: 45px;
@@ -282,7 +283,7 @@ input[type="checkbox"]{
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 30px;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: bold;
     transition: 0.5s ease-in-out;
     box-shadow: 0px 4px 10px 1px rgba(255, 135, 25, 0.57);
@@ -295,6 +296,34 @@ input[type="checkbox"]{
     transition: 0.4s;
     cursor: pointer;
   }
+  @media (max-width: 1100px) {
+    .second-part .content .event-text{
+      width: 100%;
+    }
+  }
+  @media (max-width : 720px) {
+    .second-part .head{
+      font-size: 2rem;
+    }
+    .second-part .content .event-text p{
+      font-size: 1rem;
+    }
+  }
+  @media (max-width : 560px) {
+    .second-part{
+      padding: 2rem;
+    }
+    .second-part .head{
+      font-size: 1.45rem;
+    }
+    .second-part .content .event-text p{
+      font-size: 0.9rem;
+    }
+    .content button{
+      font-size: 0.85rem;
+    }
+  }
+
   @media screen and(max-width: 650px) {
     .second-part .content img{
       margin-bottom: 35px;
@@ -423,6 +452,59 @@ input[type="checkbox"]{
    .second .container .card:hover .card-inner{
      transform: rotateY(180deg);
    }
+
+@media (max-width: 720px) {
+  .second .heading{
+    font-size: 2rem;
+  }
+  .second .heading .line{
+    width: 220px;
+  }
+}
+@media (max-width: 670px) {
+  .second .heading{
+    font-size: 1.75rem;
+  }
+  .second .heading .line{
+    width: 200px;
+  }
+}
+@media (max-width: 560px) {
+  .second{
+    padding: 2rem;
+  }
+  .second .heading{
+    font-size: 1.5rem;
+  }
+  .second .heading .line{
+    width: 170px;
+  }
+  .second .container .card{
+    width: 300px;
+    height: 300px;
+  }
+  .second .container{
+    padding: 0;
+  }
+  .second .container .card .card-inner .back h1{
+    font-size: 1.5rem;
+  }
+  .second .container .card .card-inner .back p{
+    font-size: 1rem;
+  }
+  .second .container .card .card-inner .back img {
+    width: 50px;
+   }
+}
+
+@media (max-width: 440px){
+  .second .heading{
+    font-size: 1.25rem;
+  }
+  .second .heading .line{
+    width: 150px;
+  }
+}
 
 
    .eventsecond{
@@ -553,6 +635,60 @@ input[type="checkbox"]{
 .eventsecond .event_container .event_card:hover .event_card-inner{
   transform: rotateY(180deg);
 }
+
+@media (max-width: 720px) {
+  .eventsecond .heading{
+    font-size: 2rem;
+  }
+  .eventsecond .heading .line{
+    width: 180px;
+  }
+}
+@media (max-width: 670px) {
+  .eventsecond .heading{
+    font-size: 1.75rem;
+  }
+  .eventsecond .heading .line{
+    width: 160px;
+  }
+}
+@media (max-width: 560px) {
+  .eventsecond{
+    padding: 2rem;
+  }
+  .eventsecond .heading{
+    font-size: 1.5rem;
+  }
+  .eventsecond .heading .line{
+    width: 130px;
+  }
+  .eventsecond .event_container .event_card{
+    width: 300px;
+    height: 300px;
+  }
+  .eventsecond .event_container{
+    padding: 0;
+  }
+  .eventsecond .event_container .event_card .event_card-inner .event_back h1{
+    font-size: 1.5rem;
+  }
+  .eventsecond .event_container .event_card .event_card-inner .event_back p{
+    font-size: 1rem;
+  }
+  .eventsecond .event_container .event_card .event_card-inner .event_back img {
+    width: 50px;
+   }
+}
+
+@media (max-width: 440px){
+  .eventsecond .heading{
+    font-size: 1.25rem;
+  }
+  .eventsecond .heading .line{
+    width: 110px;
+  }
+}
+
 
 /* -----------------Footer Section------------------ */
 
